@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+// def type for nodes in linked list
 typedef struct node 
 {
     // change hard coded len of array (longest real word = 46 char)
@@ -82,8 +83,10 @@ int main(int argc, char *argv[])
     // search LL for input2
     bool found = readFunnel(test, node1);
 
+    // display result
     printf("Found: %s\n", found ? "true" : "false");
 
+    // free memory from var stored in heap
     free(node1);
 }
 
