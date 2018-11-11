@@ -64,7 +64,6 @@ bool readFunnel(char *searchTerm, node *node1)
 
 int main(int argc, char *argv[])
 {
-    // TODO: sort input1(original) and input2(search for this in LL)
     if (argc != 3)
     {
         printf("Usage: funnel Src Test");
@@ -84,7 +83,6 @@ int main(int argc, char *argv[])
     bool found = readFunnel(test, node1);
 
     printf("Found: %s\n", found ? "true" : "false");
-    // printf("Original: %s\nAlt: %s\n", original, result);
 
     free(node1);
 }
