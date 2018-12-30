@@ -1,0 +1,20 @@
+Input: First 11 digits of UPC no.
+Output: The calculated 12th digit of UPC no.
+
+Process:
+
+    Find even numbered positions (0-based index)
+        Sum the values
+        x3 (result1)
+    Find odd numbered positions (0-based index)
+        Sum the values
+        Add to "result1" = result2
+    M = result2 % 10
+        If M = 0
+            Check digit = 0
+        Else
+            Check digit = 10 - M
+
+E.g. 04210000526 => 4
+    
+    
