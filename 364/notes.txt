@@ -1,0 +1,6 @@
+Input: No. pf die, no. of faces per die.
+Output: Sum of all the rolls of specified die
+
+Issue: How to generate random no.
+
+Process:
